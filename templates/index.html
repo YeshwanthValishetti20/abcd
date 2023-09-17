@@ -112,11 +112,10 @@ body {
 .button1{
   appearance: button;
   background-color: transparent;
-  background-image: url("https://img.freepik.com/premium-photo/digital-crime-by-anonymous-hacker_53876-19894.jpg?w=2000");
   border: 0 solid #e5e7eb;
   border-radius: .5rem;
   box-sizing: border-box;
-  color: #482307;
+  color: #dee0f4;
   column-gap: 1rem;
   cursor: pointer;
   display: flex;
@@ -140,11 +139,10 @@ body {
 .button2{
   appearance: button;
   background-color: transparent;
-  background-image: linear-gradient(to bottom, rgb(252, 162, 162), #ee3737);
   border: 0 solid #e5e7eb;
   border-radius: .5rem;
   box-sizing: border-box;
-  color: #482307;
+  color: #dee0f4;
   column-gap: 1rem;
   cursor: pointer;
   display: flex;
@@ -203,12 +201,14 @@ body {
     <div class="col-md-6 mx-auto text-center" id="form2">
         
         <br>
-        <h6 class="right" ><a style="text-align: center ; "href="{{ url }}" target="_blank">{{ url }}</a></h6>
+        <h6 class="text-center"><a href="{{ url }}" target="_blank">{{ url }}</a></h6>
+
+          
            
         <br>
         <h3 id="prediction"></h3>
-        <button class="button2" id="button2" role="button" onclick="window.open('{{url}}')" target="_blank" >Still want to Continue</button>
-        <button class="button1" id="button1" role="button"  onclick="window.open('{{url}}')" target="_blank">Continue</button>
+        <button class="button2" id="button2" role="button" style="text-align: center ; margin: auto ; display: flex; background-color: blue" onclick="window.open('{{url}}')" target="_blank" >Still want to Continue</button>
+        <button class="button1" id="button1" role="button" style="text-align: center ; margin: auto ; display: flex; background-color: blue"  onclick="window.open('{{url}}')" target="_blank">Continue</button>
     </div> 
 </div>
 <br>
