@@ -42,27 +42,14 @@ body {
   transition: all 0.3s;
 }
 
-.form__input:placeholder-shown + .form__label {
+.form_input:placeholder-shown + .form_label {
   opacity: 0;
   visibility: hidden;
   -webkit-transform: translateY(+4rem);
   transform: translateY(+4rem);
 }
 
-.background-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
 
-.btn-blue {
-  background-color: #007bff !important;
-  color: #fff !important;
-}
 .button {
   appearance: button;
   background-color: transparent;

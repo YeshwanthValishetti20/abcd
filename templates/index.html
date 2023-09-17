@@ -14,26 +14,38 @@
         
     <link href="static/styles.css" rel="stylesheet">
     <title>URL detection</title>
+    
 </head>
-<body>
-    <div class="container">
-        <h2 class="text-center">PHISHING URL DETECTION</h2>
-        <div class="form col-md">
-            <form action="/" method="post">
-                <input type="text" class="form__input" name="url" id="url" placeholder="Enter URL" required="" />
-                <button class="button btn-blue" role="button">Check here</button>
-            </form>
-        </div>
 
-        <div class="col-md" id="form2">
-            <img src="https://portswigger.net/cms/images/2d/22/f2c7-article-210908-ml-phishing.png" alt="Background Image" class="background-image" />
-            <h6 class="right"><a href="{{ url }}" target="_blank">{{ url }}</a></h6>
-            <h3 id="prediction"></h3>
-            <button class="button btn-blue" id="button2" role="button" onclick="window.open('{{url}}')" target="_blank">Still want to Continue</button>
-            <button class="button btn-blue" id="button1" role="button" onclick="window.open('{{url}}')" target="_blank">Continue</button>
-        </div>
+<body>
+    
+<div class=" container">
+    <div class="row">
+        <div class="form col-md" id="form1">
+            <h2>PHISHING URL DETECTION</h2>
+    
+            <br>
+            <form action="/" method ="post">
+                <input type="text" class="form__input" name ='url' id="url" placeholder="Enter URL" required="" />
+                <label for="url" class="form__label">URL</label>
+                <button class="button" role="button" >Check here</button>
+            </form>
+           
     </div>
+    
+    <div class="col-md" id="form2">
+        
+        <br>
+        <h6 class = "right "><a href= {{ url }} target="_blank">{{ url }}</a></h6>
+           
+        <br>
+        <h3 id="prediction"></h3>
+        <button class="button2" id="button2" role="button" onclick="window.open('{{url}}')" target="_blank" >Still want to Continue</button>
+        <button class="button1" id="button1" role="button"  onclick="window.open('{{url}}')" target="_blank">Continue</button>
+    </div> 
+</div>
 <br>
+<p></p>
 </div>
 
     <!-- JavaScript -->
@@ -72,4 +84,3 @@
 </body>
 
 </html>
-
